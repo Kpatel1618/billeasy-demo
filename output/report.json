@@ -1,0 +1,114 @@
+[
+  {
+    "invoice_id": "BE-INV-1001",
+    "is_compliant": false,
+    "issues": [
+      {
+        "rule": "7 Intrastate sales tax split incorrect",
+        "description": "For intrastate sale, CGST and SGST should each be half of the GST rate; IGST should be 0. The invoice uses IGST 900 and no CGST/SGST.",
+        "severity": "blocking",
+        "suggested_fix": "Split the tax into CGST=450 and SGST=450 (18% of 5000 \u00f7 2) and set IGST to 0."
+      }
+    ]
+  },
+  {
+    "invoice_id": "BE-INV-1002",
+    "is_compliant": false,
+    "issues": [
+      {
+        "rule": "3: IRN required",
+        "description": "IRN is missing for B2B invoice above threshold",
+        "severity": "blocking",
+        "suggested_fix": "Generate and include a valid IRN."
+      },
+      {
+        "rule": "4: QR Code required",
+        "description": "QR code is missing while IRN is required",
+        "severity": "blocking",
+        "suggested_fix": "Generate the QR code and include it with the invoice."
+      }
+    ]
+  },
+  {
+    "invoice_id": "BE-INV-1003",
+    "is_compliant": false,
+    "issues": [
+      {
+        "rule": "5. Mandatory HSN Code",
+        "description": "HSN code missing on line item",
+        "severity": "blocking",
+        "suggested_fix": "Provide a valid HSN code for each line item."
+      },
+      {
+        "rule": "7. Intrastate Tax Split",
+        "description": "Incorrect tax distribution: IGST used instead of CGST and SGST for intrastate sale",
+        "severity": "blocking",
+        "suggested_fix": "Split tax into CGST and SGST, each 50% of GST amount; set IGST to 0."
+      }
+    ]
+  },
+  {
+    "invoice_id": "BE-INV-1004",
+    "is_compliant": false,
+    "issues": [
+      {
+        "rule": "Rule 7 - Intrastate tax split",
+        "description": "CGST and SGST amounts do not match half of the applicable 18% GST rate on taxable value.",
+        "severity": "blocking",
+        "suggested_fix": "Recalculate CGST and SGST as 9% each of taxable value (i.e., \u20b91620 each)."
+      },
+      {
+        "rule": "Rule 9 - Arithmetic mismatch",
+        "description": "Sum of taxable value, CGST, SGST, IGST (21600) does not equal total_value (21599).",
+        "severity": "blocking",
+        "suggested_fix": "Adjust total_value to \u20b921240 (18000 + 1620 + 1620)."
+      }
+    ]
+  },
+  {
+    "invoice_id": "BE-INV-1005",
+    "is_compliant": false,
+    "issues": [
+      {
+        "rule": "2. Buyer GSTIN",
+        "description": "Buyer GSTIN is not a valid 15-character GSTIN.",
+        "severity": "blocking",
+        "suggested_fix": "Provide a correct 15-character GSTIN for the buyer."
+      },
+      {
+        "rule": "7. Intrastate Tax Split",
+        "description": "For intrastate sale, CGST and SGST should each be half of the tax amount and IGST must be 0, but the invoice uses IGST only.",
+        "severity": "blocking",
+        "suggested_fix": "Adjust tax calculation: set CGST and SGST each to 1080 and set IGST to 0."
+      }
+    ]
+  },
+  {
+    "invoice_id": "BE-INV-1006",
+    "is_compliant": true,
+    "issues": []
+  },
+  {
+    "invoice_id": "BE-INV-1007",
+    "is_compliant": false,
+    "issues": [
+      {
+        "rule": "7 - Intrastate tax split",
+        "description": "For intrastate sale, CGST and SGST should be applied and IGST must be zero. Current invoice shows CGST=0, SGST=0, IGST=3600.",
+        "severity": "blocking",
+        "suggested_fix": "Apply CGST=1800 and SGST=1800 (each half of 12% on 20000) and set IGST=0."
+      },
+      {
+        "rule": "10 - GST rate sanity check",
+        "description": "HSN 851762 typically taxed at 18%. Invoice uses 12%.",
+        "severity": "warning",
+        "suggested_fix": "Verify HSN mapping; if correct, consider changing GST rate to 18% or justify 12% rate."
+      }
+    ]
+  },
+  {
+    "invoice_id": "BE-INV-1008",
+    "is_compliant": true,
+    "issues": []
+  }
+]

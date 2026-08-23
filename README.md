@@ -25,10 +25,11 @@ billeasy-demo/
 ```
 
 ## Setup (≈15 min)
-1. Get a free/trial API key from https://console.anthropic.com (or swap in
-   OpenAI — the script only touches the `anthropic` client, easy to adapt).
-2. `pip install -r requirements.txt`
-3. Copy `.env.example` to `.env` and paste your key in.
+1. Get a **free** API key from Google AI Studio: https://aistudio.google.com/apikey
+   — no credit card, no purchase required, generous free daily quota.
+2. `pip install -r requirements.txt` (uses the current `google-genai` SDK)
+3. Copy `.env.example` to `.env` and paste your key in as
+   `GOOGLE_API_KEY=...`.
 
 ## Run it (≈2 min)
 ```
