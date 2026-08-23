@@ -317,34 +317,3 @@ Potential next steps include:
 ## License
 
 This project is created as a demonstration/assessment project for Billeasy and is not intended to provide legal or tax advice.
-
-## Updating the README on GitHub
-
-After replacing your existing `README.md` with this file, save it and run:
-
-```bash
-git status
-git add README.md
-git commit -m "Update README with Groq setup and local run instructions"
-git push origin main
-```
-
-You can verify the change with:
-
-```bash
-git log --oneline -1
-```
-
-You should see:
-
-```text
-Update README with Groq setup and local run instructions
-```
-
-> **Important:** Do not run `git add .` for this change unless you've checked that `.env` is ignored. The safest command here is specifically:
->
-> ```bash
-> git add README.md
-> ```
->
-> This ensures your local `.env` file is not accidentally included in the commit.
