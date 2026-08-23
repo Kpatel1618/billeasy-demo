@@ -1,0 +1,194 @@
+[
+  {
+    "invoice_id": "BE-INV-1001",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "29AACCB1234K1Z5",
+    "invoice_date": "2026-07-05",
+    "place_of_supply": "Karnataka",
+    "irn": "3c9f2a1b8e4d47f0a9c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "Wireless Mouse",
+        "hsn_code": "847160",
+        "qty": 10,
+        "rate": 500,
+        "taxable_value": 5000,
+        "gst_rate": 18,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 900
+      }
+    ],
+    "total_value": 5900,
+    "notes": "Clean invoice — interstate sale, IGST correctly applied, all mandatory fields present."
+  },
+  {
+    "invoice_id": "BE-INV-1002",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "27AACCB1234K1Z5",
+    "invoice_date": "2026-07-06",
+    "place_of_supply": "Maharashtra",
+    "irn": "",
+    "qr_code_present": false,
+    "items": [
+      {
+        "description": "Bluetooth Keyboard",
+        "hsn_code": "847130",
+        "qty": 5,
+        "rate": 1200,
+        "taxable_value": 6000,
+        "gst_rate": 18,
+        "cgst": 540,
+        "sgst": 540,
+        "igst": 0
+      }
+    ],
+    "total_value": 7080,
+    "notes": "ERROR: missing IRN and QR code — mandatory for B2B e-invoices above threshold."
+  },
+  {
+    "invoice_id": "BE-INV-1003",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "29AACCB1234K1Z5",
+    "invoice_date": "2026-07-07",
+    "place_of_supply": "Karnataka",
+    "irn": "8a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "USB-C Charging Cable",
+        "hsn_code": "",
+        "qty": 20,
+        "rate": 200,
+        "taxable_value": 4000,
+        "gst_rate": 18,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 720
+      }
+    ],
+    "total_value": 4720,
+    "notes": "ERROR: HSN code missing on line item — mandatory field for e-invoicing."
+  },
+  {
+    "invoice_id": "BE-INV-1004",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "27AACCB1234K1Z5",
+    "invoice_date": "2026-07-08",
+    "place_of_supply": "Maharashtra",
+    "irn": "5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "27-inch Monitor",
+        "hsn_code": "852852",
+        "qty": 2,
+        "rate": 9000,
+        "taxable_value": 18000,
+        "gst_rate": 18,
+        "cgst": 1800,
+        "sgst": 1800,
+        "igst": 0
+      }
+    ],
+    "total_value": 21599,
+    "notes": "ERROR: tax + taxable value should total 21600, invoice shows 21599 — rounding/calculation mismatch."
+  },
+  {
+    "invoice_id": "BE-INV-1005",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "9912345678901",
+    "invoice_date": "2026-07-09",
+    "place_of_supply": "Karnataka",
+    "irn": "1a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f80",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "Laptop Stand",
+        "hsn_code": "940390",
+        "qty": 15,
+        "rate": 800,
+        "taxable_value": 12000,
+        "gst_rate": 18,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 2160
+      }
+    ],
+    "total_value": 14160,
+    "notes": "ERROR: buyer_gstin is malformed — not a valid 15-character GSTIN format."
+  },
+  {
+    "invoice_id": "BE-INV-1006",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "27AACCB1234K1Z5",
+    "invoice_date": "2026-07-10",
+    "place_of_supply": "Maharashtra",
+    "irn": "7f8e9d0c1b2a3f4e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8e",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "Ergonomic Office Chair",
+        "hsn_code": "940130",
+        "qty": 3,
+        "rate": 5000,
+        "taxable_value": 15000,
+        "gst_rate": 18,
+        "cgst": 1350,
+        "sgst": 1350,
+        "igst": 0
+      }
+    ],
+    "total_value": 17700,
+    "notes": "Clean invoice — intrastate sale, CGST+SGST correctly split, all fields present."
+  },
+  {
+    "invoice_id": "BE-INV-1007",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "29AACCB1234K1Z5",
+    "invoice_date": "2026-07-11",
+    "place_of_supply": "Karnataka",
+    "irn": "2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "Wireless Router",
+        "hsn_code": "851762",
+        "qty": 8,
+        "rate": 2500,
+        "taxable_value": 20000,
+        "gst_rate": 12,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 3600
+      }
+    ],
+    "total_value": 23600,
+    "notes": "ERROR: GST rate applied (12%) does not match router's typical HSN-mapped rate (18%) — likely misclassification."
+  },
+  {
+    "invoice_id": "BE-INV-1008",
+    "seller_gstin": "27AABCU9603R1ZM",
+    "buyer_gstin": "27AACCB1234K1Z5",
+    "invoice_date": "2026-07-12",
+    "place_of_supply": "Maharashtra",
+    "irn": "4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f",
+    "qr_code_present": true,
+    "items": [
+      {
+        "description": "External Hard Drive 1TB",
+        "hsn_code": "847170",
+        "qty": 6,
+        "rate": 3500,
+        "taxable_value": 21000,
+        "gst_rate": 18,
+        "cgst": 1890,
+        "sgst": 1890,
+        "igst": 0
+      }
+    ],
+    "total_value": 24780,
+    "notes": "Clean invoice — all mandatory fields present, tax calculation correct."
+  }
+]
